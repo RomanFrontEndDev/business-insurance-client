@@ -1,0 +1,26 @@
+@use "sass:math";
+@use "sass:list";
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin reset-button {
+    appearance: none;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+@mixin one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}

@@ -1,0 +1,26 @@
+<script lang="ts" setup></script>
+
+<template>
+    <div class="container">
+        <slot />
+    </div>
+</template>
+
+<style lang="scss">
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media (width >= 768px) {
+        max-width: 680px;
+    }
+
+    @media (width >= 1024px) {
+        max-width: 944px;
+    }
+
+    @media (width >= 1200px) {
+        max-width: 1376px;
+    }
+}
+</style>

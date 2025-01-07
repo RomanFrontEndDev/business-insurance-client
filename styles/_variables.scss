@@ -1,0 +1,27 @@
+@use "sass:math";
+
+:root {
+    // GUI Colors
+    --black:             #000000;
+    --black-primary:     #010319;
+    --gray:              #888b94;
+    --white-darkest:     #f2f2f3;
+    --white-darker:      #fafafa;
+    --white:             #ffffff;
+    --blue-darker:       #00458a;
+    --blue-primary:      #0061eb;
+    --red:               #ff3333;
+    --payed-green:       #eff8eb;
+    --payed-blue:        #e9f2fb;
+
+    // Border Radius Variables
+    --radius:            4px;
+    --radius-md:         8px;
+    --radius-lg:         16px;
+
+    // Font Weight Variables
+    --f-weight-regular:  400;
+    --f-weight-medium:   500;
+    --f-weight-semibold: 600;
+    --f-weight-bold:     700;
+}
