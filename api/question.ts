@@ -16,3 +16,8 @@ export const sendQuestion = (user_name: string, user_phone: string, user_questio
         user_question
     },
 });
+
+/**
+ * Выполняет запрос за списком вопросов.
+ */
+export const getQuestion = () => api('/question');

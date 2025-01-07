@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { ref } from '#imports';
+import { ref, useAsyncData } from '#imports';
+import { getQuestion } from '@/api/question';
 import { createSeoMeta } from '@/helpers/seo';
 import Toast from '@/components/ui/Toast.vue';
 import ContactBlock from '@/components/common/ContactBlock.vue';
@@ -18,6 +19,10 @@ useSeoMeta(
         description: 'Мы работаем на качество и скоротечность выписки договоров, так же предоставляем консультацию и координацию между выгодными ценами, страховых компаний.'
     })
 );
+
+const { data: questions } = await useAsyncData(() => getQuestion());
+
+console.log('questions', questions);
 </script>
 
 <template>
