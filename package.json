@@ -1,7 +1,6 @@
 {
-  "name": "nuxt-app",
+  "name": "business-insurance-client",
   "private": true,
-  "type": "module",
   "packageManager": "pnpm@9.15.3",
   "scripts": {
     "build": "nuxt build",
