@@ -48,9 +48,6 @@ export default defineNuxtConfig({
             'postcss-preset-env': {},
         },
     },
-    nitro: {
-        preset: 'vercel-edge'
-    },
     compatibilityDate: '2024-11-01',
     devtools:          { enabled: true }
 });
